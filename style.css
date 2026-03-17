@@ -106,5 +106,22 @@ li {
   display: flex;
   justify-content: space-between;
   background-color: var(--secondary-color);
-  margin: 2.5rem 6.25rem;
+  padding: 2.5rem 6.25rem;
+  border-radius: 30px;
+  margin-bottom: 2.5rem;
+}
+
+.rectangle-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+}
+
+.rectangle-content h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.rectangle-content p {
+  font-size: 1.5rem;
 }
