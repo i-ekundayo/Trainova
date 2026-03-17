@@ -1,0 +1,60 @@
+:root {
+  --primary-color:#040304;
+  --secondary-color: #D5A310;
+  --text-color: #ffffff
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('./images/hero-bg.png');
+  padding: 1.25rem 6.25rem;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2.5rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 10px;
+}
+
+.nav-list li{
+  padding: 0.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+
+
