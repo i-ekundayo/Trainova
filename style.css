@@ -108,7 +108,7 @@ li {
   background-color: var(--secondary-color);
   padding: 2.5rem 6.25rem;
   border-radius: 30px;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0rem;
 }
 
 .rectangle-content {
@@ -124,4 +124,51 @@ li {
 
 .rectangle-content p {
   font-size: 1.5rem;
+}
+
+/* About Section */
+.about-us {
+  padding: 6.25rem;
+}
+
+.about-us h4 {
+  margin-bottom: 2rem;
+}
+
+.about-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-heading h1, .about-heading p {
+  width: 30%;
+}
+
+.about-content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+
+}
+
+.about-content p {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  color: #000000;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.5rem;
+}
+
+.about-content img {
+  border-radius: 20px;
+}
+
+.about-content img:last-child {
+  grid-column: 1/-1;
+  width: 100%;
 }
