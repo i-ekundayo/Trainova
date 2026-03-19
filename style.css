@@ -91,6 +91,10 @@ li {
   gap: 5px;
 }
 
+.close-menu {
+  display: none;
+}
+
 /* Hero Content */
 .hero-content {
   margin: 5rem 0rem;
@@ -466,25 +470,33 @@ li {
   }
 
   .navbar {
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    top: 0;
     left: 0;
+    height: 100vh;
     width: 100%;
     background: #040304;
     display: none;
     flex-direction: column;
-    padding: 1.5rem 0;
-    transition: all 0.3s ease;
+    padding: 4.5rem 3rem;
   }
 
   .navbar.active {
     display: flex;
   }
 
+  .close-menu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+
   .nav-list {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .header .btn {
