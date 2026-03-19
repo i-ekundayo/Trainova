@@ -190,24 +190,28 @@
           </div>
         </div>
 
-        <form action="" class="contact-form">
+        <form action="" class="contact-form" id="contactForm">
           <div class="form-input">
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Jade Smith" />
+            <small class="error"></small>
           </div>
+        
           <div class="form-input">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="example@gmail.com" />
+            <small class="error"></small>
           </div>
+        
           <div class="form-input">
             <label for="message">Message</label>
-            <textarea
-              id="message"
-              rows="7"
-              placeholder="Type your message"
-            ></textarea>
+            <textarea id="message" rows="7" placeholder="Type your message"></textarea>
+            <small class="error"></small>
           </div>
+        
           <button type="submit">Submit</button>
+        
+          <p class="success-message"></p>
         </form>
       </div>
     </section>
