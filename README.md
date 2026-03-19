@@ -1,14 +1,14 @@
 # Trainova
 Trainova is a modern and responsive fitness website designed to help users explore training programs, connect with trainers, and stay motivated on their fitness journey.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (Flexbox & Grid)
 - JavaScript (Vanilla JS)
 - Font Awesome (for icons)
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 Follow these steps to run the project locally:
 
@@ -21,3 +21,6 @@ Follow these steps to run the project locally:
 3. Open the project:
     Double-click index.html, or
     Use Live Server (recommended if you're using VS Code)
+
+## Live Link
+https://trainova-delta.vercel.app/
