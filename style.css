@@ -362,6 +362,20 @@ li {
   font-size: 1.25rem;
 }
 
+.contact-form button:hover {
+  background-color: #1f1f1f;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.success-message {
+  color: green;
+  font-weight: 600;
+}
+
 /* Footer */
 #footer {
   padding: 1.875rem 4.375rem 2.625rem;
