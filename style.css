@@ -1,7 +1,7 @@
 :root {
-  --primary-color:#040304;
-  --secondary-color: #D5A310;
-  --text-color: #ffffff
+  --primary-color: #040304;
+  --secondary-color: #d5a310;
+  --text-color: #ffffff;
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--primary-color);
   color: var(--text-color);
 }
@@ -31,8 +31,8 @@ li {
 }
 
 /* Hero Section */
-.hero-section {
-  background: url('./images/hero-bg.png');
+#hero-section {
+  background: url("./images/hero-bg.png");
   padding: 0.5rem 6.25rem;
   background-size: 100% 100%;
   background-position: center;
@@ -54,7 +54,7 @@ li {
   font-size: 1rem;
 }
 
-.nav-list li{
+.nav-list li {
   padding: 0.5rem;
 }
 
@@ -78,7 +78,7 @@ li {
 
 /* Hero Content */
 .hero-content {
-  margin:5rem 0rem;
+  margin: 5rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -127,37 +127,43 @@ li {
 }
 
 /* About Section */
-.about-us {
-  padding: 6.25rem;
+#about-us {
+  padding: 5.5rem 6.25rem 3rem;
 }
 
-.about-us h4 {
+.section h4 {
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .about-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.6875rem;
 }
 
-.about-heading h1, .about-heading p {
+.about-heading h1 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  width: 35%;
+}
+
+.about-heading>p {
   width: 30%;
 }
 
 .about-content {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto 1fr;
-
+  grid-template-columns: 1fr 2fr;
 }
 
 .about-content p {
   background-color: var(--secondary-color);
   border-radius: 20px;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,9 +172,146 @@ li {
 
 .about-content img {
   border-radius: 20px;
+  width: 100%;
 }
 
 .about-content img:last-child {
   grid-column: 1/-1;
   width: 100%;
+}
+
+/* Services Section */
+#services {
+  padding: 5.5rem 6.25rem;
+}
+
+.services-heading {
+  margin-bottom: 3.3125rem;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.services-card {
+  padding: 1.75rem 1.125rem 1.125rem;
+  background: linear-gradient(180deg, #292113 0%, #d5a310 100%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-card h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-card p {
+  font-size: 0.875rem;
+  margin-bottom: 2.4375rem;
+}
+
+.services-card img {
+  width: 100%;
+}
+
+/* Contact Section */
+#contact {
+  padding: 5.5rem 6.25rem 7.6875rem;
+  background-color: #292113;
+}
+
+.contact-heading {
+  margin-bottom: 4rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-cards {
+  width: 40%;
+  margin-top: 4rem;
+}
+
+.contact-cards>p {
+  font-size: 1.125rem;
+  margin-bottom: 2.25rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card img {
+  padding: 0.875rem;
+  background-color: #2c2c2c;
+  border: 5px;
+}
+
+.contact-mail,
+.contact-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-card .contact-mail h4,
+.contact-card .contact-phone h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #D5A310;
+  border-radius: 24px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input label {
+  font-weight: 600;
+  color: #000000;
+}
+
+.form-input input,
+.form-input textarea {
+  padding: 1rem;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  border: 2px solid #292113;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background-color: #292113;
+  color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
 }

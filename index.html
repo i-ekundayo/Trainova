@@ -8,14 +8,14 @@
   </head>
   <body>
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="hero-section">
       <header class="header">
         <img src="./images/logo.svg" alt="logo" />
         <nav class="navbar">
           <ul class="nav-list">
-            <li><a href="#about">About</a></li>
+            <li><a href="#about-us">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#contact">Contacts</a></li>
           </ul>
         </nav>
         <button class="btn btn-primary">Join Now</button>
@@ -54,7 +54,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-us">
+    <section class="section" id="about-us">
       <h4>About Us</h4>
       <div class="about-heading">
         <h1>
@@ -76,6 +76,124 @@
           we’re here to make every step of your fitness journey count.
         </p>
         <img src="./images/about-image-2.svg" alt="about us image" />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <h4>Services</h4>
+      <div class="about-heading services-heading">
+        <h1>
+          How We <span class="secondary-text">Help</span> You Get
+          <span class="secondary-text">Results</span>
+        </h1>
+        <p>
+          Everything you need to train smarter, stay consistent, and see real
+          results.
+        </p>
+      </div>
+      <div class="services-cards">
+        <div class="services-card">
+          <h3>Personal Training</h3>
+          <p>
+            Work one-on-one with expert coaches who tailor every session to your
+            goals, helping you achieve faster and more effective results.
+          </p>
+          <img src="./images/service-image-1.svg" alt="services card image" />
+        </div>
+        <div class="services-card">
+          <h3>Group Fitness Classes</h3>
+          <p>
+            Stay motivated in high-energy group sessions designed to keep you
+            consistent, engaged, and pushing beyond your limits.
+          </p>
+          <img src="./images/service-image-2.svg" alt="services card image" />
+        </div>
+        <div class="services-card">
+          <h3>Strength & Conditioning</h3>
+          <p>
+            Build power, improve endurance, and enhance overall performance
+            through structured strength and conditioning programs.
+          </p>
+          <img src="./images/service-image-3.svg" alt="services card image" />
+        </div>
+        <div class="services-card">
+          <h3>Cardio & Endurance Training</h3>
+          <p>
+            Boost your stamina and heart health with guided cardio programs that
+            keep your workouts effective and results-driven.
+          </p>
+          <img src="./images/service-image-4.svg" alt="services card image" />
+        </div>
+        <div class="services-card">
+          <h3>Nutrition Guidance</h3>
+          <p>
+            Get practical nutrition advice to support your training, improve
+            recovery, and help you maintain a balanced, healthy lifestyle.
+          </p>
+          <img src="./images/service-image-5.svg" alt="services card image" />
+        </div>
+        <div class="services-card">
+          <h3>Transformation Programs</h3>
+          <p>
+            Commit to a results-focused program designed to help you lose fat,
+            build muscle, and achieve lasting physical transformation.
+          </p>
+          <img src="./images/service-image-6.svg" alt="services card image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h4>Contact</h4>
+      <div class="about-heading contact-heading">
+        <h1>
+          How to <span class="secondary-text">Get in Touch</span> with
+          <span class="secondary-text">Trainova</span>
+        </h1>
+        <p>
+          Have questions or ready to get started? Reach out and our team will guide you every step of the way.
+        </p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-cards">
+          <p>
+            Whether you have a question, need guidance, or you're ready to begin
+            your fitness journey, our team is here to help. Fill out the form
+            and we’ll get back to you as soon as possible.
+          </p>
+          <div class="contact-card">
+            <img src="./images/email-icon.svg" alt="email icon" />
+            <div class="contact-mail">
+              <h4>Email</h4>
+              <p>trainova@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./images/phone-icon.svg" alt="phone icon" />
+            <div class="contact-phone">
+              <h4>Phone Number</h4>
+              <p>+2348108167577</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact-form">
+          <div class="form-input">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Jade Smith" />
+          </div>
+          <div class="form-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com" />
+          </div>
+          <div class="form-input">
+            <label for="message">Message</label>
+            <textarea id="message" rows="7" placeholder="Type your message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </section>
   </body>
